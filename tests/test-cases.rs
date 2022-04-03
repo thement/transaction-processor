@@ -42,6 +42,7 @@ fn run_testcase(transaction_path: &str, account_path: &str) -> Result<()> {
     // checking the whole list
     let mut fail = false;
     for i in 0..accounts.len().max(expected_accounts.len()) {
+        // TODO: this test needs to test equality on floats with limited precision (approx_eq)
         if accounts[i] != expected_accounts[i] {
             println!(
                 "accounts at position {} differ:\n{:?}\n{:?}",

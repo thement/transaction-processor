@@ -27,3 +27,7 @@ dispute , 5, 501,
 chargeback ,5, 501,
 deposit , 5, 502, 1000,
 withdrawal , 5, 502, 500,
+deposit , 7, 701, 1000
+withdrawal , 7, 702, 500
+dispute , 7, 701, 0
+chargeback , 7, 701, 0
