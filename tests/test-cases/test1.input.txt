@@ -1,0 +1,29 @@
+type, client, tx, amount
+deposit, 1, 1, 100.12345
+deposit, 2, 2, 100.12345
+  withdrawal , 2 , 3  , 100.1235
+ deposit, 2, 3, 100.12345
+withdrawal , 0 ,0, 0123123
+deposit ,3, 100, 10000000000000000000
+deposit ,3, 101, 10000000000.0000
+dispute , 3, 101, 500.0000
+deposit ,3, 102, 10000000000.0000
+resolve ,3, 101, 
+deposit , 4, 200 , 5000
+deposit , 4, 201, 33
+deposit , 6, 601, 100
+deposit , 6, 602, 1000
+dispute ,6 , 601, 
+resolve ,6,601
+dispute ,6 , 601, 
+dispute , 4, 200,
+dispute , 4, 201,
+resolve , 4, 200,
+chargeback ,4, 201,
+deposit , 4, 202, 100
+deposit , 5, 500, 1.0123
+deposit , 5, 501, 100
+dispute , 5, 501,
+chargeback ,5, 501,
+deposit , 5, 502, 1000,
+withdrawal , 5, 502, 500,
